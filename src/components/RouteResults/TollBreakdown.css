@@ -1,0 +1,87 @@
+.toll-breakdown {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.toll-breakdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.toll-breakdown-header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.total-toll {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.toll-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.toll-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f7fafc;
+  border-radius: 6px;
+  border-left: 3px solid #667eea;
+}
+
+.toll-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.toll-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.toll-authority {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.toll-estimated {
+  font-size: 0.8rem;
+  color: #ed8936;
+  font-style: italic;
+}
+
+.toll-cost {
+  font-weight: 700;
+  color: #667eea;
+  font-size: 1.1rem;
+}
+
+.toll-note {
+  background: #e0e7ff;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #4c51bf;
+  line-height: 1.4;
+}

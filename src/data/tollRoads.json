@@ -1,0 +1,166 @@
+{
+  "tollPlazas": [
+    {
+      "id": "nj-turnpike-1",
+      "name": "New Jersey Turnpike - Exit 1",
+      "location": [-75.1339, 39.8142],
+      "roadName": "I-95 / NJ Turnpike",
+      "direction": "northbound",
+      "rates": {
+        "cash": 135,
+        "ezpass": 107
+      },
+      "authority": "New Jersey Turnpike Authority"
+    },
+    {
+      "id": "nj-turnpike-14",
+      "name": "New Jersey Turnpike - Exit 14",
+      "location": [-74.1782, 40.7159],
+      "roadName": "I-95 / NJ Turnpike",
+      "direction": "northbound",
+      "rates": {
+        "cash": 305,
+        "ezpass": 244
+      },
+      "authority": "New Jersey Turnpike Authority"
+    },
+    {
+      "id": "delaware-memorial-bridge",
+      "name": "Delaware Memorial Bridge",
+      "location": [-75.5191, 39.6905],
+      "roadName": "I-295",
+      "direction": "both",
+      "rates": {
+        "cash": 500,
+        "ezpass": 500
+      },
+      "authority": "Delaware River and Bay Authority"
+    },
+    {
+      "id": "pa-turnpike-valley-forge",
+      "name": "Pennsylvania Turnpike - Valley Forge",
+      "location": [-75.4307, 40.0897],
+      "roadName": "I-76 / PA Turnpike",
+      "direction": "both",
+      "rates": {
+        "cash": 180,
+        "ezpass": 144
+      },
+      "authority": "Pennsylvania Turnpike Commission"
+    },
+    {
+      "id": "golden-gate-bridge",
+      "name": "Golden Gate Bridge",
+      "location": [-122.4783, 37.8199],
+      "roadName": "US-101",
+      "direction": "southbound",
+      "rates": {
+        "cash": 0,
+        "ezpass": 880
+      },
+      "authority": "Golden Gate Bridge District"
+    },
+    {
+      "id": "florida-turnpike-miami",
+      "name": "Florida Turnpike - Miami Gardens",
+      "location": [-80.2886, 25.9421],
+      "roadName": "FL Turnpike",
+      "direction": "both",
+      "rates": {
+        "cash": 175,
+        "ezpass": 123
+      },
+      "authority": "Florida's Turnpike Enterprise"
+    },
+    {
+      "id": "mass-pike-boston",
+      "name": "Massachusetts Turnpike - Allston",
+      "location": [-71.1192, 42.3541],
+      "roadName": "I-90 / Mass Pike",
+      "direction": "both",
+      "rates": {
+        "cash": 150,
+        "ezpass": 105
+      },
+      "authority": "MassDOT"
+    },
+    {
+      "id": "dulles-toll-road",
+      "name": "Dulles Toll Road - Reston",
+      "location": [-77.3483, 38.9586],
+      "roadName": "VA-267",
+      "direction": "both",
+      "rates": {
+        "cash": 475,
+        "ezpass": 375
+      },
+      "authority": "Metropolitan Washington Airports Authority"
+    },
+    {
+      "id": "chesapeake-bay-bridge",
+      "name": "Chesapeake Bay Bridge",
+      "location": [-76.3777, 38.9905],
+      "roadName": "US-50 / US-301",
+      "direction": "eastbound",
+      "rates": {
+        "cash": 400,
+        "ezpass": 250
+      },
+      "authority": "Maryland Transportation Authority"
+    },
+    {
+      "id": "ohio-turnpike-toledo",
+      "name": "Ohio Turnpike - Toledo",
+      "location": [-83.6466, 41.6056],
+      "roadName": "I-80 / I-90",
+      "direction": "both",
+      "rates": {
+        "cash": 425,
+        "ezpass": 319
+      },
+      "authority": "Ohio Turnpike Commission"
+    }
+  ],
+  "tollRoads": [
+    {
+      "name": "I-95 New Jersey Turnpike",
+      "averageCostPerMile": 8,
+      "bounds": [
+        [-75.1339, 39.8142],
+        [-74.1782, 40.9159]
+      ]
+    },
+    {
+      "name": "I-76 Pennsylvania Turnpike",
+      "averageCostPerMile": 6,
+      "bounds": [
+        [-80.3192, 40.4406],
+        [-75.0103, 40.0897]
+      ]
+    },
+    {
+      "name": "I-90 Massachusetts Turnpike",
+      "averageCostPerMile": 5,
+      "bounds": [
+        [-73.0633, 42.1129],
+        [-71.0589, 42.3601]
+      ]
+    },
+    {
+      "name": "Florida Turnpike",
+      "averageCostPerMile": 7,
+      "bounds": [
+        [-81.2089, 25.6766],
+        [-80.1918, 28.3772]
+      ]
+    },
+    {
+      "name": "I-80/90 Ohio Turnpike",
+      "averageCostPerMile": 5,
+      "bounds": [
+        [-84.8061, 41.5988],
+        [-80.5195, 41.4993]
+      ]
+    }
+  ]
+}

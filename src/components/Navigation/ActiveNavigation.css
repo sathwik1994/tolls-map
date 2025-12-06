@@ -1,0 +1,226 @@
+.active-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.nav-exit-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-exit-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-eta {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.nav-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.current-maneuver {
+  margin-bottom: 3rem;
+}
+
+.maneuver-icon-large {
+  font-size: 8rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.maneuver-instruction {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.maneuver-road {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.nav-progress {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: center;
+}
+
+.distance-remaining {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.next-maneuver {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.next-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.next-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.next-icon {
+  font-size: 2rem;
+}
+
+.next-instruction {
+  font-weight: 600;
+}
+
+.nav-footer {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+}
+
+.nav-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 0.25rem;
+}
+
+.stat-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.nav-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-control-btn {
+  padding: 0.75rem 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-control-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.nav-control-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.nav-control-btn.primary {
+  background: white;
+  color: #667eea;
+  border-color: white;
+}
+
+.nav-control-btn.primary:hover:not(:disabled) {
+  background: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .maneuver-icon-large {
+    font-size: 5rem;
+  }
+
+  .maneuver-instruction {
+    font-size: 1.5rem;
+  }
+
+  .maneuver-road {
+    font-size: 1rem;
+  }
+
+  .nav-stats {
+    gap: 2rem;
+  }
+}

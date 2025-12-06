@@ -1,0 +1,76 @@
+.map-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.map-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f0f4ff 100%);
+}
+
+.error-message {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: left;
+}
+
+.error-message h3 {
+  margin: 0 0 1rem 0;
+  color: #e53e3e;
+  font-size: 1.5rem;
+}
+
+.error-message p {
+  margin: 0.5rem 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.error-message code {
+  background: #f7fafc;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #2d3748;
+}
+
+.error-message pre {
+  background: #2d3748;
+  color: #f7fafc;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.error-message a {
+  color: #667eea;
+  text-decoration: none;
+}
+
+.error-message a:hover {
+  text-decoration: underline;
+}
+
+/* Mapbox Controls Styling */
+.mapboxgl-ctrl-group {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mapboxgl-ctrl-group button {
+  border: none;
+  background: white;
+}
+
+.mapboxgl-ctrl-group button:hover {
+  background: #f7fafc;
+}
