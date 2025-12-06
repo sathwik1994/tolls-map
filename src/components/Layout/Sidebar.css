@@ -53,6 +53,12 @@
   }
 
   .sidebar.collapsed {
-    width: 0;
+    width: 50px;
+  }
+
+  .sidebar.collapsed .sidebar-toggle {
+    right: 0.5rem;
+    background: #667eea;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   }
 }
