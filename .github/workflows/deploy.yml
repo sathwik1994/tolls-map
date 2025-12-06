@@ -36,7 +36,6 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          # Add your Mapbox token as a GitHub secret
           VITE_MAPBOX_ACCESS_TOKEN: ${{ secrets.VITE_MAPBOX_ACCESS_TOKEN }}
           VITE_TOLLGURU_API_KEY: ${{ secrets.VITE_TOLLGURU_API_KEY }}
           VITE_ENABLE_OSRM_FALLBACK: true
@@ -50,13 +49,6 @@ jobs:
         with:
           path: './dist'
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
