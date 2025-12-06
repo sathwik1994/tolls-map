@@ -53,12 +53,21 @@
   }
 
   .sidebar.collapsed {
-    width: 50px;
+    width: 0;
+    min-width: 0;
   }
 
   .sidebar.collapsed .sidebar-toggle {
-    right: 0.5rem;
+    position: fixed;
+    left: 1rem;
+    top: 5rem;
+    right: auto;
     background: #667eea;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    z-index: 1001;
+    font-size: 1.2rem;
   }
 }
